@@ -1,50 +1,39 @@
-**1. Description**
-A Python console program that performs basic arithmetic operations—addition, subtraction, multiplication, and division. The calculator allows users to chain calculations (continue with a result) or start a fresh calculation anytime. Mathematical functions are mapped to operator symbols and selected interactively by the user.
+**Overview**
 
-**2. How It Works**
-The program prints a logo at the start.
+The Python Calculator is an interactive console application that performs basic arithmetic operations such as addition, subtraction, multiplication, and division.
 
-The user inputs the first number.
+It allows continuous calculations (chaining results) and provides a clean user interface through text-based interaction.
+This project demonstrates my understanding of function-based design, data structures, and program flow control in Python.
 
-All available operation symbols (+, -, *, /) are displayed.
+Learning Objectives & Technical Implementation
 
-The user chooses an operation and enters the next number.
+This project helped me strengthen my knowledge of core programming principles and apply them to create a real, functional tool.
 
-The calculation result is displayed.
+**Concept &	Description**
 
-The user can continue calculating with the previous result or start a new calculation (recursion).
+1. Functions for Reusability - Implemented arithmetic operations (add, subtract, multiply, divide) as separate reusable functions.
+2. Dictionaries for Operation Mapping -	Used a Python dictionary to map operator symbols (+, -, *, /) to their corresponding functions.
+3. Loops for Continuous Operation -	Designed a while loop that allows users to continue calculations without restarting the program.
+4. User Input Handling - Practiced using input() and typecasting with float() for numeric inputs.
+5. Formatted Output - Displayed results with readable expressions (e.g., 5 * 3 = 15).
+6. Modular Design & Readability -	Structured the code with clear functions and logical flow for maintainability.
+7. Importing Custom Modules -	Utilized a custom art module to display a creative logo and improve user experience.
 
-The process can be repeated indefinitely.
-
-
-**3. Operators and Functions Used**
-
-Operators:
-= (Assignment): Stores values for variables (e.g., inputs, results, flags).
-
-+, -, *, / (Arithmetic): Performs addition, subtraction, multiplication, and division.
-
-in: Used in loops to iterate over dictionary keys and input checks.
-
-[] (Indexing): Fetches functions from the operations dictionary by operator symbol.
-
-: (Colon): Structures blocks for functions, loops, and control statements.
+By completing this project, I gained stronger control over Python syntax, data structures, and interactive program design.
 
 
+**Example Interaction**
 
-Functions and Methods:
-print(): Displays prompts, results, and operation symbols.
-
-input(): Collects user input for numbers, operation choices, and continuation.
-
-float(): Converts string input to floating-point numbers for calculations.
-
-calculator(): Main function handling user interaction and calculation workflow.
-
-for loop: Iterates over available operations for selection.
-
-Recursion: Restarts the calculator when a new calculation is chosen.
-
-User-defined functions: add(), subtract(), multiply(), divide() each return the result of the arithmetic operation.
-
-Dictionary mapping: Links operator symbols to corresponding functions.
+Welcome to the Python Calculator!
+What is the first number?: 12
++
+-
+*
+/
+Pick an operation: *
+What is the next number?: 4
+12 * 4 = 48
+Type 'y' to continue calculating with 48, or 'n' to start a new calculation: y
+Pick an operation: +
+What is the next number?: 2
+48 + 2 = 50
